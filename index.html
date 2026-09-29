@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Exoplanetary Explorations — charting.">
+  <meta name="color-scheme" content="dark">
+  <title>Exoplanetary Explorations</title>
+  <style>
+    :root {
+      --bg: #020818;
+      --aurora: #3dffb5;
+      --ochre: #e09a4a;
+      --text: #e6eef8;
+      --muted: #7f93ad;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100dvh;
+      display: grid;
+      place-items: center;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(ellipse 60% 35% at 50% 100%, rgba(61, 255, 181, 0.15) 0%, transparent 55%),
+        radial-gradient(ellipse 30% 25% at 75% 25%, rgba(224, 154, 74, 0.18) 0%, transparent 50%),
+        radial-gradient(circle at 15% 30%, rgba(100, 140, 255, 0.12) 0%, transparent 35%),
+        var(--bg);
+      text-align: center;
+      padding: 2rem;
+    }
+    main { max-width: 32rem; }
+    .orb {
+      width: 3.25rem; height: 3.25rem; margin: 0 auto 1.4rem;
+      border-radius: 50%;
+      background:
+        radial-gradient(circle at 35% 30%, #ffe0a8 0%, var(--ochre) 40%, #6b3a12 100%);
+      box-shadow:
+        0 0 0 6px rgba(61, 255, 181, 0.12),
+        0 0 36px rgba(224, 154, 74, 0.4);
+    }
+    h1 {
+      font-size: clamp(1.6rem, 5vw, 2.25rem);
+      font-weight: 700;
+      letter-spacing: -0.015em;
+      margin-bottom: 0.75rem;
+    }
+    .status {
+      display: inline-block;
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--aurora);
+      margin-bottom: 1.15rem;
+      border-bottom: 1px solid rgba(61, 255, 181, 0.35);
+      padding-bottom: 0.35rem;
+    }
+    p {
+      color: var(--muted);
+      font-size: 1.05rem;
+      line-height: 1.5;
+    }
+    .domains {
+      margin-top: 2rem;
+      font-size: 0.85rem;
+      color: rgba(127, 147, 173, 0.75);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="orb" aria-hidden="true"></div>
+    <h1>Exoplanetary Explorations</h1>
+    <p class="status">Scanning the rim</p>
+    <p>Parked at the edge — maps still unfolding.</p>
+    <p class="domains">exoplanetaryexplorations.com · exoplanetaryexplorations.space</p>
+  </main>
+</body>
+</html>
